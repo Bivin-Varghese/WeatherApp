@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(214, 210, 210, 0.123); */
+    background-color: rgba(124, 123, 123, 0.253);
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    text-align: center;
+    /* background-image: linear-gradient(#DECBA4, #3e5151a9); */
+    padding: 26px 20px;
+    width: 354px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px -2px #444444;
+    /* max-height: 550px; */
+    /* height: 200px; */
+    background-image: url(https://images.pexels.com/photos/1906932/pexels-photo-1906932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: 100%;
+    background-size: cover;
+
+}
+
+.tag-line {
+    margin-top: 24px;
+
+}
+
+.weather {
+    display: none;
+}
+
+
+
+.in {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in button {
+    padding: 2px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px -2px #444444;
+}
+
+.in button i {
+    font-size: 26px;
+}
+
+.in input {
+    font-size: 20px;
+    padding-left: 18px;
+    color: rgb(85, 75, 75);
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px -2px #444444;
+
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    opacity: 0;
+
+
+}
+
+
+
+.data-main h1 {
+    font-size: 72px;
+    margin-top: -10px;
+}
+
+.data-main h2 {
+    font-size: 48px;
+    margin-top: -10px;
+}
+
+.data-main h3 {
+    font-size: 24px;
+}
+
+.d-left,
+.d-right {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.d-right {
+    justify-content: end;
+}
+
+.d-left img,
+.d-right img {
+    width: 25%;
+    margin-right: 10px;
+}
+
+
+
+
+/* error   */
+.error {
+    overflow: hidden;
+    display: none;
+
+
+}
+
+.error img {
+    margin-top: -10px;
+    width: 100%;
+}
+
+.error p {
+    font-size: 22px;
+    margin-top: -20px;
+}

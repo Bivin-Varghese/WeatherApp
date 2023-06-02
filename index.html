@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="in">
+            <button onclick="currentLocation()">
+                <i class="fa-sharp fa-solid fa-location-dot" style="color:grey"></i>
+            </button>
+
+            <input id="locationIn" type="text" placeholder="Enter city name">
+
+        </div>
+
+
+        <!-- tag-line -->
+        <h3 class="tag-line">"Your Ultimate Weather Companion"</h3>
+
+
+        <!-- error  -->
+        <div class="error">
+            <img src="./images/error1.webp" alt="">
+
+            <p>Oops! Location not found</p>
+        </div>
+
+
+        <!-- weather  -->
+        <div class="weather">
+
+            <div class="data-main">
+                <img id="w-icon" src="" alt="">
+                <h1 id="temperature"></h1>
+                <h2 id="place"></h2>
+                <h3 id="condition"></h3>
+            </div>
+
+            <div class="data">
+                <div class="d-left">
+                    <img src="./images/humidity.png" alt="">
+
+                    <div class="humidity">
+                        <h3 id="humidity"></h3>
+                        <h4>Humidity</h4>
+                    </div>
+                </div>
+
+                <div class="d-right">
+                    <img src="./images/wind.png" alt="">
+                    <div class="wind-speed">
+                        <h3 id="wind"></h3>
+                        <h4>wind-speed</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
